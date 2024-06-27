@@ -28,12 +28,12 @@ The Employee Management System allows you to add, view, update, and delete emplo
 
 ## File Structure
 
-###Backend
+### Backend
 - `models/empleado.js`: Defines the schema for employee records.
 - `routes/empleado.routes.js`: Contains the routes for CRUD operations on employees.
 - `index.js`: Entry point for the backend application.
 
-###Frontend
+### Frontend
 - `src/app/app.module.ts`: Main module of the Angular application.
 - `src/app/services/empleado.service.ts`: Service for interacting with the backend API.
 - `src/app/pages/agregar-empleado/agregar-empleado.component.{html,ts}`: Component for adding a new employee.
