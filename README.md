@@ -1,9 +1,9 @@
-# Employee Management System
+# PC Mean
 
-This project is a full-stack application for managing employees, developed using the MEAN stack (MongoDB, Express.js, Angular, Node.js).
+This project is a full-stack application for managing computers, developed using the MEAN stack (MongoDB, Express.js, Angular, Node.js).
 
 ## Description
-The Employee Management System allows you to add, view, update, and delete employee records. The application features a simple and intuitive user interface built with Angular and a robust backend using Node.js, Express, and MongoDB.
+This project allows you to add, view, update, and delete computers records. The application features a simple and intuitive user interface built with Angular and a robust backend using Node.js, Express, and MongoDB.
 
 ## Installation and Usage
 
@@ -29,16 +29,16 @@ The Employee Management System allows you to add, view, update, and delete emplo
 ## File Structure
 
 ### BackEnd
-- `models/empleado.js`: Defines the schema for employee records.
-- `routes/empleado.routes.js`: Contains the routes for CRUD operations on employees.
+- `models/computadora.js`: Defines the schema for computers records.
+- `routes/computadoras.routes.js`: Contains the routes for CRUD operations on computers.
 - `index.js`: Entry point for the backend application.
 
 ### FrontEnd
 - `src/app/app.module.ts`: Main module of the Angular application.
-- `src/app/services/empleado.service.ts`: Service for interacting with the backend API.
-- `src/app/pages/agregar-empleado/agregar-empleado.component.{html,ts}`: Component for adding a new employee.
-- `src/app/pages/editar-empleado/editar-empleado.component.{html,ts}`: Component for editing an existing employee.
-- `src/app/pages/listar-empleados/listar-empleados.component.{html,ts}`: Component for listing all employees.
+- `src/app/services/computadora.service.ts`: Service for interacting with the backend API.
+- `src/app/pages/agregar-computadora/agregar-computadora.component.{html,ts}`: Component for adding a new computer.
+- `src/app/pages/editar-computadora/editar-computadora.component.{html,ts}`: Component for editing an existing computer.
+- `src/app/pages/listar-computadoras/listar-computadoras.component.{html,ts}`: Component for listing all computers.
 
 ## Help
 
