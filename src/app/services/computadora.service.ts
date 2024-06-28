@@ -8,8 +8,7 @@ import { Observable, catchError, map, throwError } from 'rxjs';
 export class ComputadoraService {
 
   //Propiedades del service
-  baseUri:string='http://localhost:4000/api';
-  // baseUri:string='https://api.render.com/deploy/srv-cpu9c55ds78s73e35u1g?key=_G6sYh7D18k/api'
+  baseUri:string='https://pc-mean.onrender.com';
   headers=new HttpHeaders().set('Content-Type','application/json');
 
   constructor(private http:HttpClient) {}
