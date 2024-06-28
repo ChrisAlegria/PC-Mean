@@ -6,7 +6,7 @@ const cors = require('cors')
 //Coneccion a la BD
 mongoose
     //.connect('mongodb://127.0.0.1:27017/empleados')
-    .connect('mongodb+srv://christianarti21:12345@cluster0.wowqvip.mongodb.net/empleados?retryWrites=true&w=majority&appName=Cluster0')
+    .connect('mongodb+srv://christianarti21:12345@cluster0.5zqrtub.mongodb.net/computadoras?retryWrites=true&w=majority&appName=Cluster0')
     .then((x)=>{
         console.log(`Conectado exitosamente a la base de datos ${x.connections[0].name} `)
     })
@@ -15,7 +15,7 @@ mongoose
     })
 
     //Configuracion del servidor web
-    const empleadoRouter = require('./routes/empleado.routes')
+    const computadoraRouter = require('./routes/computadora.routes')
     const app = express()
 
     app.use(bodyParser.json())
@@ -26,7 +26,7 @@ mongoose
     )
 
     app.use(cors())
-    app.use('/api',empleadoRouter)
+    app.use('/api',computadoraRouter)
 
     //Habilitar el puerto para las peticiones
     const port = process.env.PORT || 4000

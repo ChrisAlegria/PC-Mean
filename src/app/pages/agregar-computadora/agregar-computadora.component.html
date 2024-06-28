@@ -1,0 +1,81 @@
+<div class="container">
+    <h2>Agregar Computadora</h2>
+    <div class="row justify-content-center">
+        <div class="cold-md-4">
+            <div class="card-body">
+                <form [formGroup]="computadoraForm" (ngSubmit)="onSubmit()">
+                    <div class="form-group">
+                        <label for="modelo">Modelo de la computadora:</label>
+                        <input type="text" class="form-control" formControlName="modelo"/>
+                        <!-- Mensaje de error de validacion -->
+                        <div style="color: red;" *ngIf="enviado && myForm['modelo'].errors?.['required']">
+                            Este campo es obligatorio     
+                        </div>
+                    </div>
+
+                    <br/>
+
+                    <div class="form-group">
+                        <label for="marca">Marca:</label>
+                        <select class="custom-select form-control" (change)="actualizarMarca($event.target.value)" formControlName="marca">
+                            <option value="">Selecciona una marca:</option>
+                            <option *ngFor="let marca of computadoraMarca" value="{{marca}}">{{marca}}</option>
+                        </select>
+                          <!-- Mensaje de error de validacion -->
+                        <div style="color: red;" *ngIf="enviado && myForm['marca'].errors?.['required']">
+                            Debes seleccionar una marca 
+                        </div>
+                    </div>
+
+                    <br/>
+
+                    <div class="form-group">
+                        <label for="grafica">Grafica:</label>
+                        <select class="custom-select form-control" (change)="actualizarGrafica($event.target.value)" formControlName="grafica">
+                            <option value="">Selecciona una grafica:</option>
+                            <option *ngFor="let grafica of computadoraGrafica" value="{{grafica}}">{{grafica}}</option>
+                        </select>
+                          <!-- Mensaje de error de validacion -->
+                        <div style="color: red;" *ngIf="enviado && myForm['grafica'].errors?.['required']">
+                            Debes seleccionar una grafica 
+                        </div>
+                    </div>
+
+                    <br/>
+
+                    <div class="form-group">
+                        <label for="ram">Ram:</label>
+                        <select class="custom-select form-control" (change)="actualizarRam($event.target.value)" formControlName="ram">
+                            <option value="">Selecciona la ram:</option>
+                            <option *ngFor="let ram of computadoraRam" value="{{ram}}">{{ram}}</option>
+                        </select>
+                          <!-- Mensaje de error de validacion -->
+                        <div style="color: red;" *ngIf="enviado && myForm['ram'].errors?.['required']">
+                            Debes seleccionar la ram
+                        </div>
+                    </div>
+
+                    <br/>
+
+                    <div class="form-group">
+                        <label for="ram">Procesador:</label>
+                        <select class="custom-select form-control" (change)="actualizarProcesador($event.target.value)" formControlName="procesador">
+                            <option value="">Selecciona el procesador:</option>
+                            <option *ngFor="let procesador of computadoraProcesador" value="{{procesador}}">{{procesador}}</option>
+                        </select>
+                          <!-- Mensaje de error de validacion -->
+                        <div style="color: red;" *ngIf="enviado && myForm['procesador'].errors?.['required']">
+                            Debes seleccionar el procesador
+                        </div>
+                    </div>
+
+                    <br/>
+
+                    <div class="form-group">
+                        <button class="btn btn-success btn-lg btn-block" type="submit">Agregar computadora</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

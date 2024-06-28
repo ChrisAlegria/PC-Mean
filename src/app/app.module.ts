@@ -5,16 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { AgregarEmpleadoComponent } from './pages/agregar-empleado/agregar-empleado.component';
-import { ListarEmpleadosComponent } from './pages/listar-empleados/listar-empleados.component';
-import { EditarEmpleadoComponent } from './pages/editar-empleado/editar-empleado.component';
+import { AgregarComputadoraComponent } from './pages/agregar-computadora/agregar-computadora.component';
+import { ListarComputadorasComponent } from './pages/listar-computadoras/listar-computadoras.component';
+import { EditarComputadoraComponent } from './pages/editar-computadora/editar-computadora.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AgregarEmpleadoComponent,
-    ListarEmpleadosComponent,
-    EditarEmpleadoComponent,
+    AgregarComputadoraComponent,
+    ListarComputadorasComponent,
+    EditarComputadoraComponent,
   ],
   imports: [
     BrowserModule,

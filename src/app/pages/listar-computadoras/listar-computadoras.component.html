@@ -1,0 +1,40 @@
+<div class="container">
+    <h2>Listado de computadoras</h2>
+
+    <p *ngIf="computadoras.length<=0" class="text-center">No hay computadoras registradas</p>
+
+    <table *ngIf="computadoras.length>0" class="table table-bordered">
+        <thead class="table-success">
+            <tr>
+                <th scope="col">ID Computadora</th>
+                <th scope="col">Modelo</th>
+                <th scope="col">Marca</th>
+                <th scope="col">Grafica</th>
+                <th scope="col">Ram</th>
+                <th scope="col">Procesador</th>
+                <th scope="col">Editar</th>
+                <th scope="col">Eliminar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let computadora of computadoras; let i = index">
+                <td>{{ computadora._id }}</td>
+                <td>{{ computadora.modelo}}</td>
+                <td>{{ computadora.marca }}</td>
+                <td>{{ computadora.grafica }}</td>
+                <td>{{ computadora.ram }}</td>
+                <td>{{ computadora.procesador }}</td>
+                <td>
+                    <span [routerLink]="['/editar-computadora',computadora._id]">
+                        <button type="button" class="btn btn-warning btn-sm">Editar</button>
+                    </span>
+                </td>
+                <td>
+                    <span (click)="eliminarComputadora(computadora,i)">
+                        <button type="button" class="btn btn-danger btn-sm">Eliminar</button>
+                    </span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
