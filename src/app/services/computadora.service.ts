@@ -9,7 +9,7 @@ export class ComputadoraService {
 
   //Propiedades del service
   // baseUri:string='http://localhost:4000/api';
-  baseUri:string='https://pcbackend-ex58.onrender.com';
+  baseUri:string='https://pcbackend-ex58.onrender.com/api';
   headers=new HttpHeaders().set('Content-Type','application/json');
 
   constructor(private http:HttpClient) {}
