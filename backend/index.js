@@ -6,7 +6,7 @@ const cors = require('cors')
 //Coneccion a la BD
 mongoose
     //.connect('mongodb://127.0.0.1:27017/empleados')
-    .connect('mongodb+srv://christianarti21:12345@cluster0.5zqrtub.mongodb.net/computadoras?retryWrites=true&w=majority&appName=Cluster0')
+    .connect('mongodb+srv://christianarti21:12345@cluster0.8ddgzcr.mongodb.net/computadoras?retryWrites=true&w=majority&appName=Cluster0')
     .then((x)=>{
         console.log(`Conectado exitosamente a la base de datos ${x.connections[0].name} `)
     })
