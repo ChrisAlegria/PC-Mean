@@ -1,0 +1,33 @@
+   body {
+            background-color: #f4f6f9;
+            font-family: 'Roboto', sans-serif;
+        }
+        .container {
+            margin-top: 20px;
+            background-color: #fff;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h2 {
+            font-weight: 500;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .form-group label {
+            font-weight: 500;
+            color: #555;
+        }
+        .form-group .form-control {
+            border-radius: 4px;
+        }
+        .form-group .custom-select {
+            border-radius: 4px;
+        }
+        .form-group .btn-block {
+            font-size: 18px;
+        }
+        .form-group .text-danger {
+            color: #dc3545;
+            font-size: 14px;
+        }
